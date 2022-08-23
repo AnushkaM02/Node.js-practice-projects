@@ -20,7 +20,7 @@ weatherform.addEventListener("submit", (e) => {
   // console.log(location);
 
   messageOne.textContent = "Loading...";
-  messageOne.textContent = "";
+  messageTwo.textContent = "";
 
   fetch("/weather?address=" + location).then((response) => {
     response.json().then((data) => {
